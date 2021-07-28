@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(img/laptop.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+
+}
+
+nav h1{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    color: white;
+    cursor: pointer;
+}
+
+nav{
+    padding: 13px;
+
+}
+
+.nav-links{
+    text-align: right;
+}
+
+.nav-links  ul li{
+    display: inline-block;
+    padding: 12px;
+    margin: 9px;
+    text-decoration: none;
+
+}
+
+
+.nav-links  ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-box{
+    text-align: center;
+    left: 39%;
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    color: white; 
+}
+
+.nav-links  ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ff0000;
+    display: block;
+    margin: auto;
+}
+
+.nav-links  ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.s-page{
+    background-color: #000000e3;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.about{
+    height: 61vh;
+    
+
+}
+
+.about h1{
+    position: absolute;
+    padding-top: 25px;
+    left: 44%;
+    color: white;
+    font-size: 40px;
+}
+
+.question{
+    color: white;
+    top: 115%;
+    font-size: 2rem;
+    position: absolute;
+    left: 4%;
+}
+
+.question p{
+    font-size: 15px;
+    color: #777676;
+    
+}
+.achievements{
+    background-color: #000000e3;
+}
+
+.myachievements{
+    height: 100vh;
+}
+
+.myachievements h1{
+    color: white;
+    position: absolute;
+    left: 40%;
+    font-size: 39px;
+    padding-top: 54px;
+}
+
+.contact{
+    background-color: #000000e3;
+}
+
+.contactme{
+    height: 83vh;
+}
+
+.contactme h1{
+    color: white;
+    position: absolute;
+    padding-left: 43%;
+    padding-top: 27px;
+    font-size: 33px;
+
+
+}
+.footer{
+    background-color: #000000e3;
+    height: 11vh;
+}
+.footer p{
+    color: #77766E;
+    padding-left: 41%;
+    padding-top: 4%;
+}
+
+
+
+
+@media(max-width: 850px){
+    .nav-links  ul li{
+        visibility: collapse;
+    }
+    .text-box{
+        left: 6%;
+    }
+    .about{
+        height: 59vh;
+    }
+    .about h1{
+        font-size: 21px;
+        left: 38%;
+    }
+    .question{
+        font-size: 16px;
+    }
+    .myachievements h1{
+        left: 27%;
+        font-size: 21px;
+    }
+    .contactme{
+        height: 66vh;
+    }
+    .contactme h1{
+        left: -3%;
+    font-size: 15px;
+
+    }
+    .footer p{
+        padding-left: 39px;
+        padding-top: 36px;
+    }
+
+}
+
+
+
